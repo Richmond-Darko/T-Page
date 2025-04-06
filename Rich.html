@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribute Search</title>
+  <link rel="stylesheet" href="richie.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">TributeArchive</div>
+    <ul>
+      <li><a href="Rich.html">Home</a></li>
+      <li><a href="submit.html">Submit a Tribute</a></li>
+    </ul>
+    <button id="darkModeToggle">🌙</button>
+  </nav>
+
+  <!-- Hero + Search Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Inspiring Lives</h1>
+      <p>Search for tributes to remarkable individuals who shaped history.</p>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search by name or field (e.g., 'Einstein' or 'Science')..."
+      >
+    </div>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="Science">Science</button>
+      <button class="filter-btn" data-category="Technology">Technology</button>
+      <button class="filter-btn" data-category="Engineering">Engineering</button>
+    </div>
+  </section>
+
+  <!-- Dynamic Tribute Grid -->
+  <section class="tribute-grid" id="tributeGrid"></section>
+
+  <section class="featured-tributes">
+    <h2>Featured Tributes</h2>
+    <div class="tribute-grid">
+      <!-- Manual tribute cards -->
+      <div class="tribute-card">
+        <img src="rich.jpg" alt="Richie Example">
+        <h3>Richie Example</h3>
+        <p><strong>Technology</strong></p>
+        <p>Built 100+ websites and open-source tools.</p>
+        <div class="tribute-card">
+          <!-- ... existing content ... -->
+          <button class="like-btn" data-id="1">❤️ <span class="like-count">0</span></button>
+        </div>
+      </div>
+      
+
+      <div class="tribute-card">
+        <img src="Marie.webp" alt="Marie Curie">
+        <h3>Marie Curie</h3>
+        <p><strong>Science</strong></p>
+        <p>First woman to win a Nobel Prize.</p>
+        <div class="tribute-card">
+          <!-- ... existing content ... -->
+          <button class="like-btn" data-id="1">❤️ <span class="like-count">0</span></button>
+        </div>
+      </div>
+      
+      <!-- Add more manually -->
+      <div class="tribute-card">
+        <a href="Richie_1.html"></a>
+        <img src="Albert.webp" alt="Albert Einstein">
+        <h3>Albert Einstein</h3>
+        <p><strong>Science</strong></p>
+        <p>Theoretical physicist who revolutionized modern physics with relativity.</p>
+        <ul>
+          <li>Nobel Prize in Physics (1921)</li>
+          <li>E=mc²</li>
+        </ul>
+        <div class="tribute-card">
+          <!-- ... existing content ... -->
+          <button class="like-btn" data-id="1">❤️ <span class="like-count">0</span></button>
+        </div>
+  
+      </div>
+      
+      <!-- Nikola Tesla -->
+      <div class="tribute-card">
+        <img src="Tesla.webp" alt="Nikola Tesla">
+        <h3>Nikola Tesla</h3>
+        <p><strong>Engineering</strong></p>
+        <p>Pioneer of alternating current (AC) electricity.</p>
+        <ul>
+          <li>Designed the AC power system</li>
+          <li>Over 300 patents</li>
+        </ul>
+        <div class="tribute-card">
+          <!-- ... existing content ... -->
+          <button class="like-btn" data-id="1">❤️ <span class="like-count">0</span></button>
+        </div>
+      </div>
+      
+
+      <!-- Elon Musk -->
+      <div class="tribute-card">
+        <a href="Richie_2.html"></a>
+        <img src="ElonMusk.webp" alt="Elon Musk">
+        <h3>Elon Musk</h3>
+        <p><strong>Technology</strong></p>
+        <p>Entrepreneur advancing space exploration and electric vehicles.</p>
+        <ul>
+          <li>Founder of SpaceX, Tesla</li>
+          <li>Neuralink, The Boring Company</li>
+        </ul>
+        <div class="tribute-card">
+          <!-- ... existing content ... -->
+          <button class="like-btn" data-id="1">❤️ <span class="like-count">0</span></button>
+        </div>
+      </div>
+     
+
+      <!-- Bill Gates -->
+      <div class="tribute-card">
+        <a href="Richie_3.html"></a>
+        <img src="Billgate.webp" alt="Bill Gates">
+        <h3>Bill Gates</h3>
+        <p><strong>Technology & Philanthropy</strong></p>
+        <p>Co-founder of Microsoft and global health advocate.</p>
+        <ul>
+          <li>Bill & Melinda Gates Foundation</li>
+          <li>Windows OS pioneer</li>
+        </ul>
+        <div class="tribute-card">
+          <!-- ... existing content ... -->
+          <button class="like-btn" data-id="1">❤️ <span class="like-count">0</span></button>
+        </div>
+      </div>
+      </div>
+     
+  </section>
+    
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 TributeArchive. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="richie.js"></script>
+</body>
+</html>
